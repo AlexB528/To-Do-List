@@ -1,0 +1,214 @@
+/* Colour palette:
+#0D2231 • #E3EDF5 • #8C99A2 • #53D46B • #B1B6AE • #B4C2C6
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+
+:root {
+    --color-1: #bac0c6;
+    --color-2: #8C99A2;
+}
+
+body {
+    font-family: 'Rajdhani', sans-serif;
+    margin: 5px;
+    background-color: #B1B6AE;
+    /* overflow: auto; */
+    /* height: 100%; */
+    display: flex;
+    height: 100vh;
+}
+
+.spacerTop {
+    height: 5px;
+}
+
+.spacerBottom {
+    height: 30px;
+}
+
+
+
+.containerParent {
+    flex-grow: 1;
+    height: 100vh;
+    overflow: auto;
+    overscroll-behavior: contain;
+}
+
+.container {
+    margin-left: 210px;
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
+    grid-auto-rows: 300px;
+    gap: 19px 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    /* height: 97vh; */
+}
+
+.projectCardContainer {
+    /* border: solid 2px blue; */
+    border-radius: 5px;
+    position: relative;
+    margin: 10px;
+    overflow: auto;
+    background-color: var(--color-1);
+    box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: auto;
+}
+
+#projectDivContainer {
+    flex: 0 0 auto;
+}
+
+.tasksDiv {
+    flex: 1 1 auto;
+    overflow: auto;
+}
+
+.projectTitle {
+    font-size: 24px;
+}
+
+li {
+    list-style: none;
+}
+
+.weekContainer {
+    height: 100vh;
+}
+.week {
+    margin-top: 15px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    border-radius: 7px;
+    width: 200px;
+    height: 94vh;
+    box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
+}
+
+.day {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    /* border: solid 2px purple; */
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.dayTitle {
+    display: flex;
+    background-color: var(--color-2);
+    padding: 2px;
+    padding-left: 10px;
+    margin: -2px;
+    flex: 0 0 auto;
+}
+
+.dayContent {
+    overflow-y: auto;
+    overflow-x: hidden;
+    flex: 1 1 auto;
+    margin: 2px;
+    background-color: var(--color-1);
+}
+
+.firstDayTitle {
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border: solid 2px purple;
+    border-bottom: none;
+
+}
+
+.borderDiv {
+    border-top: solid 2px grey;
+}
+
+#projectDescription{
+    position: absolute;
+    top: calc(-1 * 40px);
+    left: 0;
+    padding: 5px;
+    border-radius: 5px;
+    border-color: rgba(148, 148, 148, 0.612);
+    color: blue;
+    font-size: 16px;
+}
+
+.projectDiv {
+    display: flex;
+    gap: 10px;
+    align-items: flex-end;
+    padding-left: 5px;
+}
+
+.taskDiv {
+    display: flex;
+    align-items: flex-end;
+    gap: 5px;
+    padding-left: 5px;
+}
+
+#taskDivContainer {
+    margin: 10px 10px 0px 10px;
+    padding: 5px;
+    background-color: var(--color-2);
+    border-radius: 3px;
+}
+
+#moreContainer {
+    display: flex;
+    color: rgb(255, 209, 24);
+    align-items: center;
+    padding-left: 5px;
+}
+
+.taskMoreBtnClicked {
+    border: solid 2px blue;
+}
+
+.firstCardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.svgContainer {
+    display: flex;
+    align-items: center;
+}
+
+.projectDueDate {
+    padding-bottom: 2px;
+}
+
+.projectDiv .svgContainer {
+    padding-bottom: 2px;
+}
+
+.smallPlusIcon {
+    display: flex;
+    align-items: center;
+}
+
+.firstDay {
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.lastDay {
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+ul {
+    padding-inline-start: 10px;
+}
+
